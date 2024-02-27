@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLP - Past Present Future</title>
+    <link rel="stylesheet" crossorigin href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./import/favicon.ico">
+</head>
+<body>
+<canvas class="webgl"></canvas>
+<div id="cover" class="cover" onclick="startPresentation()">
+    <img id="loader" class="loader-container" src="/loader/loader2.gif" alt="Loading...">
+</div>
+<div class="menu_cover">
+    <div class="menu">
+        <div class="menu_prev" onclick="window.animationPrev()">WSTECZ</div>
+        <div id="menu_content" class="menu_content">PROLOG</div>
+        <div class="menu_next" onclick="window.animationNext()">DALEJ</div>
+    </div>
+</div>
+<video id="zombie-video" loop crossOrigin="anonymous" playsinline style="display:none">
+    <source src="/video/zombie_collage.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+<video id="conflict-video" loop crossOrigin="anonymous" playsinline style="display:none">
+    <source src="/video/conflict_collage.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+<video id="congrats-video" crossOrigin="anonymous" playsinline style="display:none">
+    <source src="/video/congrats.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+<script type="module" crossOrigin="anonymous" src="./simplex-noise.min.js"></script>
+<script type="module" crossOrigin="anonymous" src="./script.js"></script>
+</body>
+</html>
